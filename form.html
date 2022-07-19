@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>form CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form action="mailto:vanessa.nectoux@gmail.com" name="formulairedecontact" method="post" enctype="text/plain">
+
+    <div>
+        <fieldset>
+            <label for="Name">Nom</label>
+            <input type="text" name="name" id="name">
+            <label for="firstname">Prénom</label>
+            <input type="text" name="firstname" id="firstname">
+            <label for="enterprise's name">Nom de votre société</label>
+            <input type="text" name="enterprise's name" id="enterprise's name">
+            <label for="mail">Mail</label>
+            <input type="text" name="mail" id="mail">
+        </fieldset>
+    </div>
+
+    <div>
+        <fieldset>
+            <label for="why">Pourquoi me contacter ?</label>
+            <select name="contact" id="why" required>
+                <option value="emploi">Proposition pour une offre d'emploi</option>
+                <option value="contact">Proposition de projet</option>
+                <option value="contact">Plus de renseignements</option>
+            </select>
+        </fieldset>
+    </div>
+
+    <div>
+        <fieldset>
+            <textarea name="text" id="text" cols="50" rows="10"></textarea>
+        </fieldset>
+    </div>
+
+    <div>
+        <button type="submit" name="user_sumit">Envoyer</button>
+    </div>
+
+</form>
+
+<script src="https://kit.fontawesome.com/5a3255fd1d.js" crossorigin="anonymous"></script>
+</body>
+</html>

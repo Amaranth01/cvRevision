@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 65.5%;
+}
+
+body {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+#cv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black double 5px;
+    box-shadow: gray 10px 10px 10px 10px;
+    width: 70%;
+    margin-left: 15vw;
+}
+
+h1, h2 {
+    background-color: darkred;
+    color: blanchedalmond;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+h1 {
+    width: 60vw;
+    margin-left: 25vw;
+    border-radius: 10px 10px 0 0;
+}
+
+h3 {
+    font-family: cursive;
+}
+
+span {
+    font-weight: bold;
+    font-family: Serif, cursive;
+}
+
+img {
+    width: 15vw;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#parcours {
+    margin-top: 0.5rem;
+}
+
+#left {
+    background-color: darkred;
+    color: blanchedalmond;
+    width: 25vw;
+    padding: 1rem;
+    border-radius: 0 10px 10px 0;
+    text-align: center;
+}
+
+.language {
+    font-style: italic;
+}
+
+dl {
+    margin: 0.5rem;
+}
+
+#corps {
+    text-align: center;
+}
+
+#professional, #study {
+    margin-top: 1rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+li {
+    list-style: none;
+}
+
+#langue {
+    font-weight: bold;
+}
+
+/*Formulaire*/
+
+form {
+    width: 200px;
+    height: auto;
+    border-radius: 30px;
+    text-align: center;
+}
+
+label {
+    color: darkred;
+    font-weight: bold;
+}
