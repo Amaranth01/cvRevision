@@ -10,14 +10,14 @@ html {
 
 body {
     font-size: 1.5rem;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
 }
 
 #cv {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: black double 5px;
+    border: black solid 5px;
     box-shadow: gray 10px 10px 10px 10px;
     width: 70%;
     margin-left: 15vw;
@@ -31,8 +31,8 @@ h1, h2 {
 }
 
 h1 {
-    width: 60vw;
-    margin-left: 25vw;
+    width: 52vw;
+    margin-left: 33vw;
     border-radius: 10px 10px 0 0;
 }
 
@@ -60,12 +60,16 @@ img {
     color: blanchedalmond;
     width: 25vw;
     padding: 1rem;
-    border-radius: 0 10px 10px 0;
     text-align: center;
 }
 
 .language {
     font-style: italic;
+}
+
+.qualification {
+    font-weight: bold;
+    font-size: 2rem;
 }
 
 dl {
@@ -80,10 +84,14 @@ dl {
     margin-top: 1rem;
 }
 
-a {
+.link, .contact {
     color: white;
     text-decoration: none;
     font-weight: bold;
+}
+
+.contact {
+    color: black;
 }
 
 li {
@@ -96,8 +104,16 @@ li {
 
 /*Formulaire*/
 
+#contentForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+
 form {
-    width: 200px;
+    width: 20rem;
     height: auto;
     border-radius: 30px;
     text-align: center;
@@ -106,4 +122,10 @@ form {
 label {
     color: darkred;
     font-weight: bold;
+    width: 2rem;
+}
+
+fieldset {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
 }
