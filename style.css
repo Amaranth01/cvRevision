@@ -31,8 +31,8 @@ h1, h2 {
 }
 
 h1 {
-    width: 52vw;
-    margin-left: 33vw;
+    width: 70vw;
+    margin-left: 15vw;
     border-radius: 10px 10px 0 0;
 }
 
@@ -128,4 +128,28 @@ label {
 fieldset {
     margin-top: 0.5rem;
     padding: 0.5rem;
+}
+
+@media screen and (max-width: 602px){
+    body, .qualification {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 420px){
+    #left {
+        height: 47vh;
+    }
+}
+
+@media screen and (max-width: 406px){
+    #left {
+        height: 52.4vh;
+    }
+}
+
+@media screen and (max-width: 379px){
+    #left {
+        height: 56.8vh;
+    }
 }
