@@ -1,11 +1,21 @@
 console.log("coucou");
 
 let name = document.querySelector("h1");
-let subTitle = document.getElementsByClassName("subTitle");
 
 function animateChangeColorTitle() {
     name.style.color = "blanchedalmond";
 }
 
-setTimeout(animateChangeColorTitle, 1000);
+setTimeout(animateChangeColorTitle, 2000);
 
+function animateSubtitle() {
+    let subtitle = document.querySelectorAll('.subTitle');
+
+}
+
+setTimeout(animateSubtitle, 1000);
+
+function changeLetter() {
+    let letter = document.querySelectorAll("label");
+
+}
