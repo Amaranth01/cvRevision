@@ -1,0 +1,17 @@
+{
+  "listHobbies": {
+    "hobbies": [
+      "Les jeux vidéo",
+      "la lecture",
+      "La rédaction",
+      "Le dressage canin"
+    ]
+  },
+
+  "listComputerSkill": {
+    "ComputerSkill": [
+      "Maîtrise de Wordpress, Gimp, PHPStorm",
+      "Maîtrise du langage HTML, CSS, JS, PHP, SQL"
+    ]
+  }
+}
