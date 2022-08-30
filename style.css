@@ -38,10 +38,12 @@ h1 {
 
 h2 {
      color: blanchedalmond;
+    padding: 0.5rem;
  }
 
 h3 {
     font-family: cursive;
+    padding: 0.5rem;
 }
 
 span {

@@ -1,5 +1,3 @@
-console.log("coucou");
-
 let name = document.querySelector("h1");
 
 function animateChangeColorTitle() {
@@ -8,17 +6,21 @@ function animateChangeColorTitle() {
 
 setTimeout(animateChangeColorTitle, 2000);
 
-function animateSubtitle() {
-    let subtitle = document.querySelectorAll('.subTitle');
+let subtitle = document.querySelectorAll('.subTitle');
 
+function changeColor() {
+     for (let i = 0; i < subtitle.length; i++) {
+         subtitle[i].style.backgroundColor = 'darkgreen';
+     }
 }
-
-setTimeout(animateSubtitle, 1000);
+setTimeout(changeColor, 3500)
 
 function changeLetter() {
     let letter = document.querySelectorAll("label");
 
 }
+
+/*Management Json */
 
 let jsonDataObjectHobbies = `{
     "listeHobbies": {        
