@@ -1,3 +1,5 @@
+
+/*animate h1*/
 let name = document.querySelector("h1");
 
 function animateChangeColorTitle() {
@@ -6,6 +8,7 @@ function animateChangeColorTitle() {
 
 setTimeout(animateChangeColorTitle, 2000);
 
+/*change color background h2 + h3 */
 let subtitle = document.querySelectorAll('.subTitle');
 
 function changeColor() {
@@ -15,10 +18,27 @@ function changeColor() {
 }
 setTimeout(changeColor, 3500)
 
-function changeLetter() {
-    let letter = document.querySelectorAll("label");
+/*Change color label*/
+let span = document.querySelectorAll('span');
 
+let color = ['darkred', 'darkgreen', 'darkblue', 'darkgrey', 'darkmagenta', 'darksalmon', 'darkviolet'];
+
+function random() {
+    return Math.floor(Math.random() * color.length);
 }
+
+
+function changeLetter() {
+    for (let i = 0; i < span.length; i++) {
+        span[i].addEventListener('mouseover', function (){
+            span[i].style.color = color[random(color)];
+            span[i].style.fontStyle = 'italic';
+            span[i].style.fontWeight = 'bold';
+        });
+    }
+}
+
+changeLetter();
 
 /*Management Json */
 
