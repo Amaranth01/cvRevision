@@ -1,7 +1,13 @@
 {
-  "langue": {
-    "anglais": "niveau intermédiaire",
-    "Allemand": "niveau débutant",
-    "Langue des signes": "niveau intermédiaire"
+  "Dd" : {
+    "langue": [
+      "niveau intermédiaire",
+      "niveau débutant",
+      "niveau intermédiaire"
+    ],
+    "skills" : [
+      "Wordpress, Gimp, PHPStorm",
+      "HTML, CSS, JS, PHP, SQL"
+    ]
   }
 }

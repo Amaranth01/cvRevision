@@ -41,40 +41,66 @@ function changeLetter() {
 changeLetter();
 
 /*Management Json */
+let hobbies = document.querySelector('#hobbies');
+const Request = "data.json";
 
-let jsonDataObjectHobbies = `{
-    "listeHobbies": {        
-        "hobbies": [
-            "Les jeux vidéo",
-            "la lecture",
-            "La rédaction",
-            "Le dressage canin"
-        ]
-    },
-}`;
+let xhr = new XMLHttpRequest();
+xhr.open("GET", Request);
 
-let json = JSON.stringify(jsonDataObjectHobbies);
+xhr.responseType = "json";
+xhr.onload = function () {
+    if(xhr.status === 200) {
+        let response = xhr.response;
+        let ulHobbies = document.createElement('ul');
 
-document.querySelector('#hobbies').innerHTML = json;
+        let liGame  = document.createElement('li');
+        liGame.innerHTML = response.Ul.hobbies;
 
-let jsonSataObjectSkill = `{
-    "listSkill" : {
-        "ComputerSkill": [
-            "logiciel": "Maîtrise de Wordpress, Gimp, PHPStorm",
-            "Language": "Maîtrise du langage HTML, CSS, JS, PHP, SQL"
-        ]
-    },
-}`;
+        let liRead = document.createElement('li');
+        liRead.innerHTML = response.Ul.hobbies;
 
-let jsonSkill = JSON.stringify(jsonSataObjectSkill);
-document.querySelector('#computerSkill').innerHTML = jsonSkill;
+        let liWrite = document.createElement('li');
+        liWrite.innerHTML = response.Ul.hobbies;
 
-let jsonDD = `{
-    "langue": {
-        "anglais": "niveau intermédiaire",
-        "Allemand": "niveau débutant",
-        "Langue des signes": "niveau intermédiaire"
-  }
-}`;
-let jsonLanguage = JSON.stringify(jsonDD);
-document.querySelector('#languageSkill').innerHTML = jsonLanguage;
+        let liDog = document.createElement('li');
+        liDog.innerHTML = response.Ul.hobbies;
+
+        hobbies.append(ulHobbies)
+        ulHobbies.append(liGame);
+    }
+}
+xhr.send();
+
+let language = document.querySelector('#langue');
+let computerSkills = document.querySelector('#computerSkill');
+
+const RequestDd = "datadd.json";
+
+let xhrDd = new XMLHttpRequest();
+xhrDd.open("GET", RequestDd);
+
+xhrDd.responseType = "json";
+xhrDd.onload = function () {
+    if (xhrDd.status === 200) {
+        let response = xhrDd.response;
+
+        let ddAnglais = document.createElement('dd');
+        ddAnglais.innerHTML = response.Dd.langue;
+
+        let ddAllemand = document.createElement('dd');
+        ddAllemand.innerHTML = response.Dd.langue;
+
+        let ddSigne = document.createElement('dd');
+        ddSigne.innerHTML = response.Dd.langue;
+
+        let ddWP = document.createElement('dd');
+        ddWP.innerHTML = response.Dd.skills;
+
+        let ddHTML = document.createElement('dd');
+        ddHTML.innerHTML = response.Dd.skills;
+
+        language.append(ddAnglais);
+        computerSkills.append(ddWP);
+    }
+}
+xhrDd.send();
